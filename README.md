@@ -79,7 +79,25 @@ It's also fair to assume that there will be no "cycles" among the forwarding ent
 Consider what would happen if we allowed entries like these to exist simultaneously. If someone sends mail to Alex at 123 Main St., Irvine, CA 92697, where should it be forwarded? To 234 Main St.? Back to 123 Main St. again? Then on to 234 Main St. again? Your program need not check for this case. You can simply assume that this case will never come up, and we won't test your program in this case. It's fine for your program runs infinitely or even crashes in this case. 
 
 ## Storing your forwarding list
-One of the central tasks that this program will perform is to store and access a list of forwarding entries. For this purpose, you should use one of the techniques introduced in chapter 10 of the text (pointers and/or dynamic arrays), and not a vector.
+One of the central tasks that this program will perform is to store and access a list of forwarding entries. For this purpose, you should use one of the techniques introduced in chapter 10 of the text (pointers and/or dynamic arrays), and not a vector. An advanced concept is _linked lists_, introduced in the text in section 17.1. 
+
+## Testing
+
+This program has a simple, but somewhat tedious, user interface so it is especially nice to automate testing (of course, automated testing should be considered more than just *nice* for all programming you do). The bash shell command prompt has the ability to attach a file stream to your program's `cin` and/or `cout` using the I/O redirect operators, `<` and `>`. Note that these have only one character and are not the same as the C++ insertion and extraction operators which have two characters. 
+
+In the project_2 directory we have provided a `sample` program and a `input.txt` file with sample input commands. Once you have compiled your program you can run it from the command line:
+
+```
+cd ~/workspace/project_2
+./sample.o < input.txt > output.txt
+```
+
+You should see a new `output.txt` file. As you develop your program, add more commands to the input file and verify that the output file looks correct when you run *your* program (not just the sample!).
+
+
+## Implementation
+
+While other implementations are possible, you should have at least one class (probably for the **Move** event). Another class is possible for the overall list of moves.
 
 ## Code Review
 

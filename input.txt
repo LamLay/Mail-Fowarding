@@ -1,0 +1,8 @@
+ADD
+James Foster
+1232 NW Weybridge Way, Beaverton, OR 97006
+1103 SE Falbo Drive, College Place, WA 99324
+MAIL
+James Foster
+1232 NW Weybridge Way, Beaverton, OR 97006
+QUIT
