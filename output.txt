@@ -1,0 +1,20 @@
+****************************
+Options: 
+   ADD: Add Address 
+   REMOVE: Remove Address 
+   MAIL: Mail Address 
+   QUIT: Quit the program
+Enter your selection: What's your name? 
+Enter your old address: 
+Enter your new address: 
+Added.
+****************************
+Options: 
+   ADD: Add Address 
+   REMOVE: Remove Address 
+   MAIL: Mail Address 
+   QUIT: Quit the program
+Enter your selection: What's your name? 
+What's address do you want to mail? 
+old address1 is 1103 SE Falbo Drive, College Place, WA 99324
+old address2 is 1103 SE Falbo Drive, College Place, WA 99324

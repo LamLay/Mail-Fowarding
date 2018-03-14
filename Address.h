@@ -9,18 +9,48 @@
  
 #ifndef ADDRESS_H
 #define ADDRESS_H
+#include <string>
 using namespace std;
+
 
 class Address {
     public:
-        void addAddress (string newAddress);
-        void removeAddress ();
-        void mailAddress ();
-        void quit();
-    
-    private:
+        Address() {
+            name = "Removed";
+            oldAddress = "Removed";
+            newAddress = "Removed";
+        }    
+            
+        Address (string newName, string oldAddress1, string newAddress1) {
+             name = newName;
+             oldAddress = oldAddress1;
+             newAddress = newAddress1;
+        }
+        
+        // copy constructor
+        // Address(const Address & arg) {
+        //     name = arg.getName();
+        //     oldAddress = arg.getOldAddress();
+        //     newAddress = arg.getNewAddress();
+        // }
+        
+        string getName() {
+            return name;
+        }
+            
+        string getOldAddress() {
+            return oldAddress;
+        }
+        
+        string getNewAddress() {
+            return newAddress;
+        }
+        
+    private: 
         string name;
-        string address;
+        string oldAddress;
+        string newAddress;
+    
 };
 
 #endif //ADDRESS_H       
